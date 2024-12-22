@@ -1,0 +1,80 @@
+# Visual Studio cache, build results, and
+# user-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files
+*.rsuser
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+
+# Mono auto generated files
+mono_crash.*
+
+# Build Results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio Code
+.vscode/
+.vscode
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code extensions folder
+.vscode-test/
+
+# Local History for Visual Studio
+.localhistory/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Entity Framework
+*.edmx
+*.edmx.diagram
+*.edmx.sql
+
+# Visual Studio 2019
+.vs/
+
+# Visual Studio working files
+.vs/
+
+# ASP.NET Core SignalR debug logs
+signalr-debug.log
+
+# JetBrains Rider
+.idea/
+.idea/*
+*.sln.iml
+
+# Rider DotSettings
