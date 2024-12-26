@@ -1,8 +1,7 @@
-using System;
-using System.Data;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using MultiShop.Discount.Entities;
+using System.Data;
 
 namespace MultiShop.Discount.Context;
 
@@ -17,7 +16,7 @@ public class DapperContext : DbContext
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=localhost;Database=MultiShopDiscountDb;User Id=SA;Password=testServer;TrustServerCertificate=true;");
+        optionsBuilder.UseSqlServer(_connectionString);
     }
     public DbSet<Coupon> Coupons { get; set; }
     public IDbConnection CreateConnection() => new SqlConnection(_connectionString);

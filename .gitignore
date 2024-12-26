@@ -77,4 +77,5 @@ signalr-debug.log
 .idea/*
 *.sln.iml
 
-# Rider DotSettings
+
+**/appsettings.json
