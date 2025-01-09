@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/UILayout/_UILayout.cshtml";
+}
+
+
+
+@await Component.InvokeAsync("_CarouselDefault")
+@await Component.InvokeAsync("_FeaturedDefault")
+@await Component.InvokeAsync("_CategoriesDefault")
+@await Component.InvokeAsync("_FeaturedProductsDefault")
+@await Component.InvokeAsync("_RecentProductsDefault")
+@await Component.InvokeAsync("_VendorDefault")
