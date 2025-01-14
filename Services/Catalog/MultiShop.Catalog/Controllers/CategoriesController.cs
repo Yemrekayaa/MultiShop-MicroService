@@ -16,7 +16,7 @@ namespace MultiShop.Catalog.Controllers
         {
             _categoryService = categoryService;
         }
-
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {

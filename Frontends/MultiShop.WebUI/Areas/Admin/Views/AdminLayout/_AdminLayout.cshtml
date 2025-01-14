@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+@await Component.InvokeAsync("_HeadAdminLayout")
+
+<body class="sidebar-mini">
+    <div class="wrapper">
+
+        <!-- Main Header -->
+        @await Component.InvokeAsync("_HeaderAdminLayout")
+
+        <!-- Left side column. contains the logo and sidebar -->
+        @await Component.InvokeAsync("_SidebarAdminLayout")
+
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            @await Component.InvokeAsync("_MainSectionAdminLayout")
+
+
+            <!-- Main content -->
+            @RenderBody()
+            <!-- content -->
+        </div>
+        <!-- content-wrapper -->
+        <!-- Main Footer -->
+        <footer class="main-footer dark-bg">
+            <div class="pull-right hidden-xs"> Version 1.0</div>
+            Copyright &copy; 2017 Yourdomian. All rights reserved.
+        </footer>
+    </div>
+    <!-- wrapper -->
+    <!-- jQuery -->
+    <script src="~/wwwadmin/dist/js/jquery.min.js"></script>
+    <script src="~/wwwadmin/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/wwwadmin/dist/js/ovio.js"></script>
+</body>
+</html>
