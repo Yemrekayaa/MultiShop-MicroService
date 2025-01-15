@@ -1,0 +1,27 @@
+﻿@model MultiShop.DtoLayer.CatalogDtos.CategoryDtos.CreateCategoryDto
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<section class="content container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="chart-box">
+                @* <div class="">
+                    <h4>Kategori Ekle</h4>
+                    <p>Kategori ile ilgili ekleme işlemlerinizi aşağıdaki panel üzerinden gerçekleştirebilirsiniz.</p>
+                </div> *@
+                <div>
+                    <form method="post">
+                        <label>Kategori Adı</label>
+                        <input type="text" class="form-control" asp-for="Name" />
+                        <br />
+                        <button class="btn btn-primary">Kategoriyi Ekle </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
