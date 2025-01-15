@@ -1,0 +1,38 @@
+﻿@model MultiShop.DtoLayer.CatalogDtos.ProductDtos.UpdateProductDto
+@{
+    ViewData["Title"] = "Ürünü Düzenle";
+    Layout = "~/Areas/Admin/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<section class="content container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="chart-box">
+                <div>
+                    <form asp-area="Admin" asp-controller="Product" asp-action="Update" method="post">
+                        <input type="hidden" asp-for="Id" />
+                        <label>Ürün Adı Adı</label>
+                        <input type="text" class="form-control" asp-for="Name" />
+                        <br />
+                        <label>Ürün Fiyatı</label>
+                        <input type="text" class="form-control" asp-for="Price" />
+                        <br />
+                        <label>Ürün Görseli</label>
+                        <input type="text" class="form-control" asp-for="ImageUrl" />
+                        <br />
+                        <label>Ürün Kategorisi</label>
+                        <select asp-for="CategoryId" asp-items="ViewBag.categoryList" class="form-control"></select>
+                        <br />
+                        <label>Ürün Açıklaması</label>
+                        <textarea class="form-control" asp-for="Description" rows="5"></textarea>
+                        <br />
+                        <button type="submit" class="btn btn-primary">Ürünü Kaydet</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+

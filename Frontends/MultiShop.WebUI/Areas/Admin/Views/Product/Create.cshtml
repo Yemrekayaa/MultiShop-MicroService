@@ -1,0 +1,36 @@
+﻿@model MultiShop.DtoLayer.CatalogDtos.ProductDtos.CreateProductDto
+@{
+    ViewData["Title"] = "Ürün Oluştur";
+    Layout = "~/Areas/Admin/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<section class="content container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="chart-box">
+                <div>
+                    <form method="post">
+                        <label>Ürün Adı</label>
+                        <input type="text" class="form-control" asp-for="Name" />
+                        <br />
+                        <label>Ürün Fiyatı</label>
+                        <input type="text" class="form-control" asp-for="Price" />
+                        <br />
+                        <label>Ürün Görseli</label>
+                        <input type="text" class="form-control" asp-for="ImageUrl" />
+                        <br />
+                        <label>Ürün Kategorisi</label>
+                        @* @Html.DropDownListFor(x => x.CategoryId,(List<SelectListItem>)ViewBag.categoryList,new {@class="form-control"}) *@
+                        <select asp-for="CategoryId" asp-items="ViewBag.categoryList" class="form-control"></select>
+                        <br />
+                        <label>Ürün Açıklaması</label>
+                        <textarea class="form-control" asp-for="Description" rows="5"></textarea>
+                        <br />
+                        <button class="btn btn-primary"> Ürünü Ekle </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
